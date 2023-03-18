@@ -27,7 +27,7 @@ const Input: React.FC<InputProps> = ({
         rounded-md
         px-6
         pt-6
-        pb-3
+        pb-1
         w-full
         text-md
         text-white
@@ -45,7 +45,7 @@ const Input: React.FC<InputProps> = ({
       text-zinc-400
       duration-150
       transform
-      -translate-3
+      -translate-y-3
       scale-75
       top-4
       z-10
