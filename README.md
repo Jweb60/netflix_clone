@@ -1,5 +1,10 @@
-Projext Netflix Clone avec NextJs
+Projext Netflix Clone avec NextJs/React
 
--création de compte avec email/google ou github
--gestion bdd avec mongosedb
+-CSS avec TailwindCSS
+
+-création de compte avec email/google ou github grace à nextAuth
+
+-gestion bdd avec mongodb et primadb
+
+
 
