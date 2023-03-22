@@ -12,9 +12,9 @@ const useMovieList = () => {
 
   return {
     data,
-    isLoading,
     error,
+    isLoading
   }
-}
+};
 
 export default useMovieList;

@@ -9,17 +9,15 @@ const Billboard = () => {
   return (
     <div className="relative h-[56.25vw]">
       <video 
+          poster={data?.thumbnailUrl} 
           className="
             w-full
             h-[56.25vw]
             object-cover
-            brightness-[60%]
-            
-          "
+            brightness-[60%]"  
           autoPlay
           muted
           loop
-          poster={data?.thumbnailUrl} 
           src={data?.videoUrl}>
       </video>
       <div className="absolute top-[30%] md-top-[40%] ml-4 md:ml-16">
