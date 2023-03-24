@@ -76,28 +76,28 @@ const Navbar = () => {
         </div>
 
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
-          <p className="text-white text-sm">Parcourir</p>
-          <BsChevronDown className={`text-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'  }`} />
-          < MobileMenu visible={showMobileMenu}/>
-        </div>
 
+          <p className="text-white text-sm">Browse</p>
+          <BsChevronDown className={`w-4 text-white fill-white transition ${showMobileMenu ? 'rotate-180' : 'rotate-0'}`} />
+
+        </div>
 
         <div className="flex flex-row ml-auto gap-7 items-center">
 
-            <div className="text-gray-200 hover:text-gray-300 cursor-pointer transition">
-            <BsSearch />
+          <div className="text-gray-200 hover:text-gray-300 cursor-pointer transition">
+            <BsSearch className="w-6" />
+          </div>
+          <div className="text-gray-200 hover:text-gray-300 cursor-pointer transition">
+            <BsBell className="w-6" />
+          </div>
+          <div onClick={toggleAccounteMenu} className="flex flex-row items-center gap-2 cursor-pointer relative">
+            <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
+              <img src="/images/default-red.png" alt="" />
             </div>
-            <div className="text-gray-200 hover:text-gray-300 cursor-pointer transition">
-            <BsBell />
-            </div>
+            <BsChevronDown className={`w-4 text-white fill-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'}`} />
+            <AccountMenu visible={showAccountMenu} />
+          </div>
 
-            <div onClick={toggleAccounteMenu} className="flew flex-row items-center gap-2 cursor-pointer relative">
-              <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
-                <img src="/images/default-red.png" alt="" />
-              </div>            
-              <BsChevronDown className={`text-white transition ${showAccountMenu ? 'rotate-180' : 'rotate-0'  }`} />
-              <AccountMenu visible={showAccountMenu} />
-            </div>              
         </div>
       </div>
     </nav>
