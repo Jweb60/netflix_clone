@@ -58,8 +58,7 @@ const Billboard = () => {
               "
           >
             <AiOutlineInfoCircle className="mr-1"/>
-        
-            Plus d'infos
+              <span>Plus d&apos;infos</span>
           </button>
         </div>
       </div>
